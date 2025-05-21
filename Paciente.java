@@ -9,48 +9,6 @@ public class Paciente {
     public String alergias;
     public enum TIPO {AP,BP,ABP,OP,AN,BN,ABN,ON};   
     public TIPO tipoSangre;
-
-    public String getCI() {
-        return CI;
-    }
-    //getter trae valores de fuera
-    //set:establece un valor
-    public void setCI(String CI) {
-        this.CI = CI;
-    }
-
-    public String getApellidos() {
-        return apellidos;
-    }
-
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
-    }
-
-    public String getNombres() {
-        return nombres;
-    }
-
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
-    }
-
-    public String getAlergias() {
-        return alergias;
-    }
-
-    public void setAlergias(String alergias) {
-        this.alergias = alergias;
-    }
-
-    public TIPO getTipoSangre() {
-        return tipoSangre;
-    }
-
-    public void setTipoSangre(TIPO tipoSangre) {
-        this.tipoSangre = tipoSangre;
-    }
-
     
     public Paciente(String CI, String apellidos, String nombres, String alergias, TIPO tipoSangre) {
         this.CI = CI;
@@ -69,7 +27,6 @@ public class Paciente {
         System.out.println("Tipo de sangre: " + tipoSangre);
         System.out.println("----------------------------");
     }    
-    
     
     public static void main(String[] args) {
         
