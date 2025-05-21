@@ -15,7 +15,7 @@ public class Planeta {
     double pOrbital = 0;
     double periodoRotacion = 0;
 
-    //porque no me deja poner los contructores
+    //constructores
     public Planeta(String nombre, int cantidaddeSatelites, double masa, double volumen, int diametro, int distanciaMedia, tipoPlaneta tipo, boolean observable, double pOrbital, double periodoRotacion) {
         this.nombre = nombre;
         this.cantidaddeSatelites = cantidaddeSatelites;
@@ -29,7 +29,7 @@ public class Planeta {
         this.periodoRotacion = periodoRotacion;
     }
     //void es vacio:programas que no devuelven nada
-    //funciones programas chiquitos
+    //las funciones son programas chiquitos que podremos reutilizar
     //
     void imprimir() {
         System.out.println("Nombre del planeta: " + nombre);
@@ -40,13 +40,12 @@ public class Planeta {
         System.out.println("Distancia media:" + distanciaMedia);
         System.out.println("Tipo de planeta:" + tipo);
         System.out.println("Es observable:" + observable);
-        System.out.println("Periodo orbital:" + pOrbital + " años");
+        System.out.println("Periodo orbital:" + pOrbital + " aÃ±os");
         System.out.println("Periodo de rotacion:" + periodoRotacion + " dias");
     }
 
     //metodo que calcule la densidad
     //getter retorna en base al tipode dato
-    //
     double densidad() {
         double densidad;
         return densidad = masa / volumen;
